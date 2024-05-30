@@ -15,15 +15,15 @@ function FinishScreen() {
   return (
     <>
       <p className="result">
-        <span>{emoji}</span> You scored <strong>{points}</strong> out of{" "}
+        <span>{emoji}</span> Calificación: <strong>{points}</strong> de{" "}
         {maxPossiblePoints} ({Math.ceil(percentage)}%)
       </p>
-      <p className="highscore">(Highscore: {highscore} points)</p>
+      <p className="highscore">(Puntuación: {highscore} puntos)</p>
       <button
         className="btn btn-ui"
         onClick={() => dispatch({ type: "restart" })}
       >
-        Restart quiz
+        Volver a jugar
       </button>
     </>
   );
